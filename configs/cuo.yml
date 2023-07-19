@@ -1,0 +1,19 @@
+two_theta: [10.0, 43.0]
+step_size: 0.015
+wavelength: 1.20789
+transmission: true # if XRD transmission mode
+strain: 0.005 # lattice strain for varied structure
+texture: 0.7 # maximum texture of powder
+
+sample_holder: 20.0 # sample holder angle (in degrees)
+background_type: "decay" # chebyshev or decay
+
+fwhm_range: [0.2, 0.7] # peak fwhm in radians [min, max]
+noise_level: [0.05, 0.12] # SNR (level noise to max peak) in [min, max]
+multiphase_peak_num: 2 # number of multi-phase peaks per scan
+multiphase_peak_range: [25.0, 33.0] # alternative [25.0, 35.0]
+multiphase_peak_height: [0.1, 0.2] # [min, max] of multiphase peaks
+multiphase_restricted: 25 # no multi-phase peaks in [-25, 25] range around peaks
+
+random_shift: 20 # random linear shift applied to simulated signals
+seed: null

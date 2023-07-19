@@ -1,0 +1,4 @@
+tensorflow=2.11
+scipy
+tqdm
+git+https://github.com/jschuetzke/python-powder-diffraction.git@1.0

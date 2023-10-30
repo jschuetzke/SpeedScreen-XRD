@@ -44,7 +44,7 @@ class CatAcc(tf.keras.callbacks.Callback):
 
     def on_epoch_end(self, epoch, logs=None):
         logs = {} or logs
-        _, res1, res2 = self.model.predict(self.x, verbose=0)
+        res1, res2 = self.model.predict(self.x, verbose=0)
         acc = multiout_acc(res1, res2, self.y)
         prefix = "" if self.name == "" else self.name + "_"
         logs[prefix + "accuracy"] = acc
